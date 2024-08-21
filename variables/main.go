@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	/*var productName string
+	/*var productName String
 	var quantity int
 	var discount float32
 	var isInStock bool
