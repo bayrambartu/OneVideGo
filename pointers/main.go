@@ -29,11 +29,23 @@ func main() {
 	add12pointer(&a)
 	fmt.Println(a)*/
 
-	var numbers = []int{1, 2, 3}
-	fmt.Println(numbers)
-	changeValue(numbers)
-	fmt.Println(numbers)
+	// var numbers = []int{1, 2, 3}
+	// fmt.Println(numbers)
+	// changeValue(numbers)
+	// fmt.Println(numbers)
+
+	i, j := 42, 2701
+	p := &i         // point to i
+	fmt.Println(*p) // read i through the pointer
+	*p = 21         // set i through the pointer
+	fmt.Println(i)  // see the new value of i
+
+	p = &j       // point to j
+	*p = *p / 37 // divide j through the pointer
+	fmt.Print(j) // see the new vaşues of j
 }
+
+/*
 func changeValue(numbers []int) { // arrayler ve slicesler referans tipler oldugu için bunlar zaten fonksiyonşara tutgu degerın pointer yanı referans degerını yollarlar
 	numbers[0] = 1000 // numbers'ın 0. adresine gidip o adresteki değri değiştiriyor
 
@@ -47,4 +59,4 @@ func add12(x int) {
 func add12pointer(x *int) {
 	*x += 12
 
-}
+} */
